@@ -12,7 +12,7 @@ export const IndexPage: FC = () => {
       <List>
         <Section
           header="Features"
-          footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
+          footer="You 1 can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
         >
           <Link to="/ton-connect">
             <Cell
@@ -24,7 +24,7 @@ export const IndexPage: FC = () => {
           </Link>
         </Section>
         <Section
-          header="Application Launch Data"
+          header="Application Launch Data 1"
           footer="These pages help developer to learn more about current launch information"
         >
           <Link to="/init-data">

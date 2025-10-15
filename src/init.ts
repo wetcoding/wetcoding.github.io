@@ -11,7 +11,7 @@ import {
   themeParamsState,
   retrieveLaunchParams,
   emitEvent,
-  miniApp,
+  miniApp, requestFullscreen, enableClosingConfirmation, disableVerticalSwipes,
 } from '@telegram-apps/sdk-react';
 
 /**
@@ -67,6 +67,10 @@ export async function init(options: {
     miniApp.mountSync();
     bindThemeParamsCssVars();
   }
+
+  requestFullscreen.ifAvailable();
+  enableClosingConfirmation.ifAvailable();
+  disableVerticalSwipes.ifAvailable();
 
   mountViewport.isAvailable() && mountViewport().then(() => {
     bindViewportCssVars();
